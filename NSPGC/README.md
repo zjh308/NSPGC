@@ -82,12 +82,7 @@ zjh_code_final_tensor_old copy/
 -   **`compute_heterogeneous_effect_tensor.m`**: 异簇效果计算
 -   **`build_similarity_matrix_optimized.m`**: 优化版相似度矩阵构建
 
-#### 分析与测试工具
 
--   **`generate_convergence_plot.m`**: 收敛性分析图表生成
--   **`test_tensor_performance.m`**: 张量版性能测试
--   **`test_optimizations.m`**: 优化效果验证
--   **`progressive_hyperparameter_search.m`**: 渐进式参数搜索
 
 ## 🔬 实验脚本与工具
 
@@ -106,18 +101,8 @@ zjh_code_final_tensor_old copy/
     -   梯度计算: 完全向量化稀疏矩阵操作
     -   相似度矩阵: 优化距离计算和k-NN搜索
 
-#### `zjh_reproduce_jaffe_result.m`
 
--   **角色**: Jaffe数据集最优结果复现脚本
--   **功能**: 使用预设最优参数验证算法性能
--   **输出**: 详细评估指标和可视化图表
 
-#### 敏感性分析与可视化
-
--   `comprehensive_sensitivity_analysis.m`: 全面的参数敏感性分析
--   `compact_sensitivity_visualization.m`: 紧凑型敏感性可视化
--   `lambda_alpha_sensitivity.m`: λ和α参数的敏感性分析
--   `robust_sensitivity_analysis.m`: 鲁棒性敏感性分析
 
 ### 超参数优化工具
 
@@ -150,17 +135,7 @@ verify_cleanup()  % 验证所有核心函数完整且可运行
    cd exp/
    run_hyperparameter_search()  % 自动搜索最优参数
    ```
-
-2. **复现已知最优结果**:
-   ```matlab
-   zjh_reproduce_jaffe_result()  % Jaffe数据集复现
-   ```
-
-3. **性能测试**:
-   ```matlab
-   cd SOLUTION/
-   test_tensor_performance()     % 测试张量优化性能
-   ```
+    
 
 ### 算法版本说明
 
